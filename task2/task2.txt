@@ -57,3 +57,68 @@ CSS can be added to an HTML page in three ways:
 the best way for applying is External stylesheet file, because using that we manipulate full styling in proper way and no confusions are occuring in coding using external stylesheet.
 
 2) what are the different css selectors with example , explain element class, and id.
+
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+  We can divide CSS selectors into five categories:
+
+    Simple selectors (select elements based on name, id, class)
+    Combinator selectors (select elements based on a specific relationship between them)
+    Pseudo-class selectors (select elements based on a certain state)
+    Pseudo-elements selectors (select and style a part of an element)
+    Attribute selectors (select elements based on an attribute or attribute value)
+
+1) The CSS id Selector:
+	The id selector uses the id attribute of an HTML element to select a specific element.
+	The id of an element is unique within a page, so the id selector is used to select one unique element!
+	To select an element with a specific id, write a hash (#) character, followed by the id of the element.
+	ex:- 
+		#para1 {
+ 			 text-align: center;
+  			 color: red;
+			}
+2) The CSS class Selector:
+	The class selector selects HTML elements with a specific class attribute.
+	To select elements with a specific class, write a period (.) character, followed by the class name.
+	ex:- 
+		.center {
+ 			 text-align: center;
+  			 color: red;
+			}
+
+3) with the help of diagram explain box model.
+
+	The CSS Box Model:-
+
+		In CSS, the term "box model" is used when talking about design and layout.
+		The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.
+		 The image below illustrates the box model:
+
+	Explanation of the different parts:
+
+	    Content - The content of the box, where text and images appear
+    	    Padding - Clears an area around the content. The padding is transparent
+    	    Border - A border that goes around the padding and content
+    	    Margin - Clears an area outside the border. The margin is transparent
+		
+	   The box model allows us to add a border around elements, and to define space between elements. 
+		ex:-		
+				div {
+  					  width: 300px;
+					  border: 15px solid green;
+					  padding: 50px;
+					  margin: 20px;
+					}
+
+
+JAVASCRIPT 
+
+1)  list down the ways which javascript command can be added to a webpage , what is the preffered way.
+
+	There are typically three ways to add JavaScript to a web page:
+	
+    		Embedding the JavaScript code between a pair of <script> and </script> tag.
+    		Creating an external JavaScript file with the .js extension and then load it within the page through the src attribute of the <script> tag.
+    		Placing the JavaScript code directly inside an HTML tag using the special tag attributes such as onclick, onmouseover, onkeypress, onload, etc.
+
+	the most preffered way is using external javascript because it is very easy for us to work with javascript using external javascript.
+
