@@ -1,0 +1,59 @@
+HTML
+
+1) what is HTML ? give the basic Structure Of HTML Page.
+
+HTML is hyper Text Markup Language. HTML is standard markup language for creating web pages.it describes the structure of the page.
+HTML elements tells the browser how to display the content.
+
+Structure OF html page :-
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> </title>
+</head>
+<body>
+
+</body>
+</html>
+
+so these are the elements presents in basic structure of html page.
+
+
+2) Diffrence between inline and block elements.
+
+A block-level element always starts on a new line, and the browsers automatically add some space (a margin ) before and after the element.
+A block-level element always takes up the full width available
+Common used Block elements :-  <p> , <div> <h1>--<h6> , <main> ,<nav>, <header> , <footer>
+
+An inline element does not start on a new line.
+An inline element only takes up as much width as necessary.
+common used inline elements :- <a> , <input> , <span> <br> , <small> ,<select>
+
+3) Create an html page with following content.
+
+CSS
+
+1) explain the diffrent way in which css can be applied to HTML, what is prefered and why ?
+
+CSS can be added to an HTML page in three ways:
+1. Inline - Add style inside an HTML tag using style attribute to give styling.
+
+ ex :- <div style="color:black;"> 
+
+2.Internal - Inside <head> tag, add <style> tag and provide styling inside it.
+
+ ex:- <style type="text/css"> 
+  div { 
+    color: red; 
+  }  
+ </style> 
+
+3. External - You can do all styling of an HTML file in external CSS file and link that file to HTML page.
+ External file should be linked in HTML page using <link> tag inside <head> tag.
+
+ ex:-  <link rel="stylesheet" type="text/css" href="path to your stylesheet" /> 
+
+the best way for applying is External stylesheet file, because using that we manipulate full styling in proper way and no confusions are occuring in coding using external stylesheet.
+
+2) what are the different css selectors with example , explain element class, and id.
