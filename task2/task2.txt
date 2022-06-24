@@ -20,7 +20,7 @@ Structure OF html page :-
 so these are the elements presents in basic structure of html page.
 
 
-2) Diffrence between inline and block elements.
+2) Difference between inline and block elements.
 
 A block-level element always starts on a new line, and the browsers automatically add some space (a margin ) before and after the element.
 A block-level element always takes up the full width available
