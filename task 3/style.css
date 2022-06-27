@@ -22,28 +22,28 @@
 }
 
 .header{
-    background-color: #8338ec;
+    background: linear-gradient(to right , #7259DB , #8873e1);
     grid-area: h;
 }
 .sidebar{
-    background-color: #48cae4;
+    background: linear-gradient(to bottom , #37ccc5 , #2daea7);
     grid-area: s;
 
 }
 .content1{
-    background-color: #0096c7;
+    background: linear-gradient(to bottom right , #5f60de , #3293f3 , #34cee2);
     grid-area: c1;
 }
 .content2{
-    background-color:#0077b6 ;
+    background:linear-gradient(to bottom right , #5f60de , #3293f3 , #34cee2);
     grid-area: c2;
 }
 .content3{
-    background-color: #4361ee;
+    background: linear-gradient(to bottom right , #5f60de , #3293f3 , #34cee2);;
     grid-area: c3;
 }
 .footer{
-    background-color: #8338ec;
+    background: linear-gradient(to right , #7259DB , #8873e1);
     grid-area: f;
 }
 @media only screen and (max-width:480px){
