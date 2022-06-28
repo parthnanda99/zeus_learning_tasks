@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="background">
+            <img src="./icons/logo used in header.svg" alt=" header quantum logo">
+        </div>
+
+    </header>
+    <main>
+        <div class="container">
+            <div class="title">
+                <img src="./quantum screen assets/icons/back.svg" alt="">
+
+                <h1>Log in with Quantum</h1>
+            </div>
+            <form action="#">
+                <div class="radio-button">
+                    <div class="District">
+                        <input type="radio" name="location" id="dist">
+                        <span class="radio-icon">
+                            <img src="./quantum screen assets/icons/radio-button-on.svg" alt="radio button off" />
+                        </span>
+                        <label for="dist">District</label>
+
+                    </div>
+                    <div class="School">
+                        <input type="radio" name="location" id="School">
+                        <span class="radio-icon">
+                            <img src="./quantum screen assets/icons/radio-button-off.svg" alt="radio button off" />
+                        </span>
+
+                        <label for="dist">Independent School</label>
+                    </div>
+                </div>
+                <div class="input-state">
+                    <p class="state">state*</p>
+                    <select name="state" id="state">
+                        <option value="alabama">Alabama</option>
+                        <option value="california">California</option>
+                        <option value="california">India</option>
+                    </select>
+                </div>
+                <div class="input-district">
+                    <p class="district">District*</p>
+                    <select id="district" name="district">
+                        <option value="alabama-district">Alabama School District</option>
+                        <option value="california-district">California</option>
+                        <option value="california-district">Kutch</option>
+
+                    </select>
+                </div>
+                <div class="username">
+                    <input type="text" name="username" id="username" class="login-info"
+                        placeholder="Username/Email ID*" />
+                    <span class="forgot-text">FORGOT USERNAME?</span>
+                </div>
+                <div class="input-password">
+                    <input type="password" name="password" id="password" class="login-info" placeholder="Password*" />
+                    <img src="./icons/preview.svg" class="eye-icon" alt="preview" />
+                    <span class="forgot-text">FORGOT PASSWORD?</span>
+                </div>
+                <div class="rememberMe">
+                    <input type="checkbox" name="remember" id="remember" />
+                    <span class="check">
+                        <img src="./icons/checkbox-checked.svg" alt="checkbox unchecked">
+                    </span>
+                    <label for="remember">Remember Me</label>
+                </div>
+                <input type="submit" value="LOG IN" />
+
+
+            </form>
+
+        </div>
+
+        <div class="about">
+            <a href="">About</a>
+
+            <span>|</span>
+            <a href="">Contact Us</a>
+        </div>
+    </main>
+    <footer>
+        <img src="./icons/logo used in footer.svg" alt="footer logo">
+        <span>|</span>
+        <span class="footerText">
+            Copyright &#169; 2020-2021
+            <span class="zeusLearning">Zeus Systems Pvt. Ltd.</span> All rights reserved.
+        </span>
+    </footer>
+</body>
+
+
+</html>
