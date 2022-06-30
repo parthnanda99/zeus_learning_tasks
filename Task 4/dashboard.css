@@ -42,18 +42,9 @@ body {
 	width: 100%;
 	left: 0;
 	z-index: -10;
-
-	background: url(./headerpatternimage.png) repeat 0, 0;
-}
-.background::after {
-	position: absolute;
-	content: ' ';
-	top: 0;
-	left: 0;
-	z-index: -10;
-	width: 100%;
-	height: 100%;
+	background: url(./headerpatternimage.png) repeat;
 	background-color: #25313f;
+	background-blend-mode: overlay;
 }
 .background img {
 	padding: 10px 0px 0px 32px;
