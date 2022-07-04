@@ -12,32 +12,34 @@
 
 <body>
     <header>
-        <div class="background"></div>
-        <img src="./icons/logo used in header.svg" alt=" header quantum logo">
+        <div class="backgroundcolor"></div>
+        <img tabindex="0" src="./icons/logo used in header.svg" alt=" header quantum logo">
 
 
     </header>
     <main>
         <div class="container">
-            <div class="title">
+            <div class="Header-title">
                 <img src="./quantum screen assets/icons/back.svg" alt="">
 
                 <h1>Log in with Quantum</h1>
             </div>
             <form action="#">
                 <div class="radio-button">
-                    <div class="District">
+                    <div class="Radio-District">
                         <input type="radio" name="location" id="dist">
                         <span class="radio-icon">
-                            <img src="./quantum screen assets/icons/radio-button-on.svg" alt="radio button off" />
+                            <img src="./quantum screen assets/icons/radio-button-on.svg" tabindex="0"
+                                alt="radio button on" />
                         </span>
                         <label for="dist">District</label>
 
                     </div>
-                    <div class="School">
+                    <div class="Radio-School">
                         <input type="radio" name="location" id="School">
                         <span class="radio-icon">
-                            <img src="./quantum screen assets/icons/radio-button-off.svg" alt="radio button off" />
+                            <img src="./quantum screen assets/icons/radio-button-off.svg" tabindex="0"
+                                alt="radio button off" />
                         </span>
 
                         <label for="dist">Independent School</label>
@@ -45,7 +47,7 @@
                 </div>
                 <div class="input-state">
                     <p class="state">state*</p>
-                    <select name="state" id="state">
+                    <select aria-label="state" name="state" id="state">
                         <option value="alabama">Alabama</option>
                         <option value="california">California</option>
                         <option value="california">India</option>
@@ -53,7 +55,7 @@
                 </div>
                 <div class="input-district">
                     <p class="district">District*</p>
-                    <select id="district" name="district">
+                    <select aria-label="district" id="district" name="district">
                         <option value="alabama-district">Alabama School District</option>
                         <option value="california-district">California</option>
                         <option value="california-district">Kutch</option>
@@ -73,7 +75,7 @@
                 <div class="rememberMe">
                     <input type="checkbox" name="remember" id="remember" />
                     <span class="check">
-                        <img src="./icons/checkbox-checked.svg" alt="checkbox unchecked">
+                        <img src="./icons/checkbox-checked.svg" tabindex="0" alt="checkbox unchecked">
                     </span>
                     <label for="remember">Remember Me</label>
                 </div>
@@ -92,7 +94,7 @@
         </div>
     </main>
     <footer>
-        <img src="./icons/logo used in footer.svg" alt="footer logo">
+        <img src="./icons/logo used in footer.svg" tabindex="0" alt="footer logo">
         <span>|</span>
         <span class="footerText">
             Copyright &#169; 2020-2021

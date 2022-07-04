@@ -1,0 +1,254 @@
+@font-face {
+	font-family: 'Quicksand';
+	src: url(./QuicksandFonts/static/Quicksand-Regular.ttf);
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url(./QuicksandFonts/static/Quicksand-Medium.ttf);
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Quicksand';
+	src: url(./QuicksandFonts/static/Quicksand-Bold.ttf);
+	font-weight: 700;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url(./QuicksandFonts/static/Quicksand-Light.ttf);
+	font-weight: 300;
+}
+@font-face {
+	font-family: 'Quicksand';
+	src: url(./QuicksandFonts/static/Quicksand-SemiBold.ttf);
+	font-weight: 600;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: #eee;
+	font-family: 'Quicksand';
+	font-weight: 500;
+}
+.backgroundcolor {
+	height: 58px;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	z-index: -10;
+	background: url(./headerpatternimage.png) repeat;
+	background-color: #25313f;
+	background-blend-mode: overlay;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	border-bottom: 2px solid #31b9e4;
+	display: flex;
+	align-items: center;
+	z-index: 10;
+	width: 100%;
+	height: 58px;
+	width: 100%;
+	padding: 0 24px;
+}
+
+img {
+	cursor: pointer;
+}
+.container {
+	border-radius: 4px;
+	border-top: 4px solid #3ac7ec;
+	width: 488px;
+	margin: 100px auto 32px;
+	background-color: #ffffff;
+	padding: 20px 32px;
+}
+.Header-title {
+	display: flex;
+	align-items: center;
+	gap: 77px;
+}
+h1 {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+}
+
+.radio-button {
+	display: flex;
+	margin-top: 32px;
+	font-size: 16px;
+	line-height: 20px;
+	gap: 90px;
+}
+.Radio-School,
+.Radio-District {
+	color: #333333;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+.input-state {
+	margin-top: 23px;
+}
+.radio-button input {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.radio-icon img {
+	height: 24px;
+	margin-top: 5px;
+}
+
+.state,
+.district {
+	font-size: 12px;
+	line-height: 16px;
+	color: #666;
+}
+.input-district {
+	margin-top: 36px;
+    select {
+        appearance: none;
+        background-image: url(./icons/arrow-down.svg);
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+}
+.radio-button label {
+	padding-left: 28px;
+	position: absolute;
+	cursor: pointer;
+}
+label {
+	font-weight: 500;
+	font-family: 'Quicksand';
+}
+select {
+	font-size: 16px;
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 20px;
+	background-color: transparent;
+	color: #222222;
+}
+.input-state {
+    select {
+	appearance: none;
+	background-image: url(./icons/arrow-down.svg);
+	background-repeat: no-repeat;
+	background-position: right;
+}
+}
+#username {
+	margin-top: 56px;
+}
+#password {
+	margin-top: 33px;
+}
+.login-info {
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 8px 0;
+	font-size: 16px;
+	line-height: 20px;
+}
+.eye-icon {
+	position: relative;
+	left: 400px;
+	bottom: 32px;
+	cursor: pointer;
+}
+.forgot-text {
+	font-size: 14px;
+	line-height: 16px;
+	color: #1f7a54;
+	float: right;
+	margin-top: 4px;
+	font-weight: 500;
+}
+.rememberMe input {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+.rememberMe {
+	margin-top: 26px;
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.check {
+	position: relative;
+	top: 2px;
+}
+input[type='submit'] {
+	display: block;
+	margin: 34px auto 0;
+	background-color: #3fd28b;
+	height: 40px;
+	width: 216px;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0px 3px 5px #0000003d;
+	font-size: 14px;
+	line-height: 18px;
+	cursor: pointer;
+}
+
+.about {
+	font-weight: 500;
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+	line-height: 18px;
+	color: #1f7a54;
+	gap: 8px;
+	margin-bottom: 16px;
+    a {
+        color: #1f7a54;
+        text-decoration: none;
+        font-weight: 600;
+    }
+}
+footer {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	background-color: #e0e1e1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+.footerText {
+	font-size: 12px;
+	line-height: 16px;
+	color: #616161;
+	font-weight: 600;
+}
+.zeusLearning {
+	font-size: 12px;
+	font-weight: 700;
+	margin: 0 8px;
+}
+
+@media only screen and (max-width: 768px) {
+	.about {
+		margin-top: 258px;
+	}
+}

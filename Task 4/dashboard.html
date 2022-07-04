@@ -10,36 +10,38 @@
 </head>
 
 <body>
+    <a class="main-content" href="#main">Skip to main content</a>
     <header>
-        <div class="background"></div>
-        <img src="./icons/logo used in header.svg" alt=" header quantum logo">
+        <div class="backgroundcolor"></div>
+        <img src="./icons/logo used in header.svg" tabindex="0" alt=" header quantum logo">
 
-        <div class="menu-bar">
-            <ul>
-                <li id="dashboard">Dashboard <span class="underline"></span></li>
-                <li id="content">Content</li>
-                <li id="users">Users</li>
-                <li id="reports">Reports</li>
-                <li id="admin">Admin</li>
-                <li><img src="./icons/alerts.svg" alt="alerts"> <span class="badge">2</span></li>
-                <li><img src="./icons/announcements.svg" alt="announcement"><span class="badge">1</span></li>
-                <li><span class="profile"></span><span class="badge white">T</span></li>
+        <div class="menu-bar" aria-controls="menu">
+            <ul role="menu">
+                <li tabindex="0" role="menuitem" id="dashboard">Dashboard <span class="underline"></span></li>
+                <li role="menuitem" tabindex="0" id="content">Content</li>
+                <li role="menuitem" tabindex="0" id="users">Users</li>
+                <li role="menuitem" tabindex="0" id="reports">Reports</li>
+                <li role="menuitem" tabindex="0" id="admin">Admin</li>
+                <li><img tabindex="0" src="./icons/alerts.svg" alt="alerts"> <span class="badge">2</span></li>
+                <li><img tabindex="0" src="./icons/announcements.svg" alt="announcement"><span class="badge">1</span>
+                </li>
+                <li><span class="profile"></span><span tabindex="0" class="badge white">T</span></li>
                 <li class="hamburger"><img src="./icons/hamburger-menu.svg" alt="hamburger-menu"></li>
 
             </ul>
         </div>
 
     </header>
-    <div class="container">
+    <div id="#main" class="container">
         <div class="course">
             <div class="courseCount">
-                <img src="./icons/courses.svg" alt="course">
+                <img tabindex="0" src="./icons/courses.svg" alt="course">
                 <span class="count">4</span>
                 <span class="count-text">Courses</span>
 
             </div>
             <div class="classCount">
-                <img src="./icons/classes.svg" alt="classes">
+                <img tabindex="0" src="./icons/classes.svg" alt="classes">
                 <span class="count">4</span>
                 <span class="count-text">Classes</span>
 
@@ -48,7 +50,7 @@
         <div class="sort">
             <span>Showing 4 of 4 courses</span>
             <div class="sort-by"><span>Sort By:</span>
-                <select id="course-name" name="course-name">
+                <select id="course-name" aria-label="course-name" name="course-name">
                     <option value="name">Course Name</option>
                 </select>
                 <img src="./icons/sort.svg" alt="sort">
@@ -62,8 +64,8 @@
                     </div>
                     <div class="course-info">
                         <div class="title">
-                            <h2>Acceleration</h2>
-                            <img src="./icons/favourite.svg" alt="">
+                            <h2 tabindex="0">Acceleration</h2>
+                            <img src="./icons/favourite.svg" alt="icon">
                         </div>
                         <div class="grade-info"><span class="subject">Physics</span><span class="line">|</span><span
                                 class="grade">Grade 7 </span>
@@ -72,7 +74,7 @@
                                 class="lessons bold-text">18</span> Lessons <span class="topics bold-text">24</span>
                             Topics</p>
                         <div class="teacher">
-                            <select id="teacher" name="teacher">
+                            <select id="teacher" aria-label="teacher" name="teacher">
                                 <option value="frank">Mr. Frank's Class B</option>
                             </select>
                         </div>
@@ -81,10 +83,10 @@
                     </div>
                 </div>
                 <div class="options">
-                    <img src="./icons/preview.svg" alt="">
-                    <img src="./icons/manage course.svg" alt="">
-                    <img src="./icons/grade submissions.svg" alt="">
-                    <img src="./icons/reports.svg" alt="">
+                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
+                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
+                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
+                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
                 </div>
             </div>
             <div class="card">
@@ -94,7 +96,7 @@
                     </div>
                     <div class="course-info">
                         <div class="title">
-                            <h2>Displacement, Velocity and Speed</h2>
+                            <h2 tabindex="0">Displacement, Velocity and Speed</h2>
                             <img src="./icons/favourite.svg" alt="">
                         </div>
                         <div class="grade-info"><span class="subject">Physics 2</span><span class="line">|</span><span
@@ -104,17 +106,17 @@
                                 class="lessons bold-text">15</span> Lessons <span class="topics bold-text">20</span>
                             Topics</p>
                         <div class="teacher">
-                            <select id="teacher" name="teacher">
+                            <select id="teacher1" aria-label="teacher" name="teacher">
                                 <option value="">No Classes</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="options">
-                    <img src="./icons/preview.svg" alt="">
-                    <img class="disabled" src="./icons/manage course.svg" alt="">
-                    <img class="disabled" src="./icons/grade submissions.svg" alt="">
-                    <img src="./icons/reports.svg" alt="">
+                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
+                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
+                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
+                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
                 </div>
             </div>
             <div class="card">
@@ -124,7 +126,7 @@
                     </div>
                     <div class="course-info">
                         <div class="title">
-                            <h2>Intoduction to Biology: Micro organisms and how they affec...</h2>
+                            <h2 tabindex="0">Intoduction to Biology: Micro organisms and how they affec...</h2>
                             <img src="./icons/favourite.svg" alt="">
                         </div>
                         <div class="grade-info"><span class="subject">Biology</span><span class="line">|</span><span
@@ -134,7 +136,7 @@
                                 class="lessons bold-text">16</span> Lessons <span class="topics bold-text">22</span>
                             Topics</p>
                         <div class="teacher">
-                            <select id="teacher" name="teacher">
+                            <select id="teacher2" aria-label="teacher" name="teacher">
                                 <option value="">All Classes</option>
                             </select>
                         </div>
@@ -142,10 +144,10 @@
                     </div>
                 </div>
                 <div class="options">
-                    <img src="./icons/preview.svg" alt="">
-                    <img class="disabled" src="./icons/manage course.svg" alt="">
-                    <img class="disabled" src="./icons/grade submissions.svg" alt="">
-                    <img src="./icons/reports.svg" alt="">
+                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
+                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
+                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
+                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
                 </div>
             </div>
             <div class="card">
@@ -156,14 +158,14 @@
                     <div class="course-info">
                         <div class="title">
                             <span class="expired">EXPIRED</span>
-                            <h2>Intoduction to High School Mathematics</h2>
+                            <h2 tabindex="0">Intoduction to High School Mathematics</h2>
                             <img class="disabled-star" src="./icons/favourite.svg" alt="">
                         </div>
                         <div class="grade-info"><span class="subject">Mathematics</span><span class="line">|</span><span
                                 class="grade">Grade 8 </span>
                             <span class="green-text">+3</span></div>
                         <div class="teacher">
-                            <select id="teacher" name="teacher">
+                            <select id="teacher3" aria-label="teacher" name="teacher">
                                 <option value="frank">Mr. Frank's Class A</option>
                             </select>
                         </div>
@@ -171,22 +173,22 @@
                     </div>
                 </div>
                 <div class="options">
-                    <img src="./icons/preview.svg" alt="">
-                    <img src="./icons/manage course.svg" alt="">
-                    <img src="./icons/grade submissions.svg" alt="">
-                    <img src="./icons/reports.svg" alt="">
+                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
+                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
+                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
+                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
                 </div>
             </div>
         </div>
     </div>
     </div>
     <div class="about">
-        <span>About</span>
+        <a href="">About</a>
         <span>|</span>
-        <span>Contact Us</span>
+        <a href="">Contact Us</a>
     </div>
     <footer>
-        <img src="./icons/logo used in footer.svg" alt="">
+        <img tabindex="0" src="./icons/logo used in footer.svg" alt="Footer logo">
         <span>|</span>
         <span class="footer-text">
             Copyright &#169; 2020-2021
