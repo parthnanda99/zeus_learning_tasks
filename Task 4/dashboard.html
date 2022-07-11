@@ -22,48 +22,213 @@
                 <li role="menuitem" tabindex="0" id="users">Users</li>
                 <li role="menuitem" tabindex="0" id="reports">Reports</li>
                 <li role="menuitem" tabindex="0" id="admin">Admin</li>
-                <li><img tabindex="0" src="./icons/alerts.svg" alt="alerts"> <span class="badge">2</span></li>
-                <li><img tabindex="0" src="./icons/announcements.svg" alt="announcement"><span class="badge">1</span>
+                <li role="none" id="menuitem"><a href="#" onmouseover="toggleNotify()" role="menuitem"
+                        aria-label="alerts">
+                        <img src="./icons/alerts.svg" alt="alert icon"></a> <span class="badge">2</span>
+                    <div class="notification-box" id="notify">
+                        <div class="notify-item yellow1">
+                            <div class="contents">
+                                <p>License for Introduction to Algebra has been assigned to your school</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <!-- <div class="course-details">
+                                    
+                                </div> -->
+                            <p class="right">15-Sep-2018 at 07:21 pm</p>
+                        </div>
+                        <div class="notify-item white1">
+                            <div class="contents">
+                                <p>Lesson 3 Practice Worksheet overdue for Amy Santiago</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <div class="course-details">
+                                <p class="course1">Course</p>
+                                <p class="course-d">Advanced Mathematics</p>
+                            </div>
+                            <p class="right">15-Sep-2018 at 07:21 pm</p>
+                        </div>
+                        <div class="notify-item yellow1">
+                            <div class="contents">
+                                <p>23 new students created</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <!-- <div class="course-details">
+                                    
+                                </div> -->
+                            <p class="right">15-Sep-2018 at 07:21 pm</p>
+                        </div>
+                        <div class="notify-item yellow1">
+                            <div class="contents">
+                                <p>15 submissions ready for evaluation</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <div class="course-details">
+                                <p class="course1">Class</p>
+                                <p class="course-d">Basics of Algebra</p>
+                            </div>
+                            <p class="right">15-Sep-2018 at 07:21 pm</p>
+                        </div>
+                        <div class="notify-item yellow1">
+                            <div class="contents">
+                                <p>License for Basic Concepts in Geometry has been assigned to your... school</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <!-- <div class="course-details">
+                                    
+                                </div> -->
+                            <p class="right">15-Sep-2018 at 07:21 pm</p>
+                        </div>
+                        <div class="notify-item">
+                            <div class="contents">
+                                <p>Lesson 3 Practice Worksheet overdue for Sam Diego</p>
+                                <div class="minus">
+                                    -
+                                </div>
+                            </div>
+                            <!-- <div class="course-details">
+                                    <p class="course">Course:</p>
+                                    <p class="course-d"> Advanced Mathematics</p>
+                                </div> -->
+                            <!-- <p class="right">15-Sep-2018 at 07:21 pm</p> -->
+                        </div>
+
+                    </div>
+                </li>
+                <li role="none" id="alert-item"> <a href="#" role="alert" aria-label="alerts"><img
+                            src="./icons/announcements.svg" onmouseover="toggleAlert()" alt="announcement"><span
+                            class="badge">1</span>
+                        <div class="notification-box" id="alerts">
+                            <div class="notify-item yellow1">
+                                <div class="contents">
+                                    <p> <span class="grey">PA: </span>wilsankumar</p>
+                                    <p>License for Introduction to Algebra has been assigned to your school</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <!-- <div class="course-details">
+                                            
+                                        </div> -->
+                                <p class="right">15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                            <div class="notify-item white1">
+                                <div class="contents">
+                                    <p>Lesson 3 Practice Worksheet overdue for Amy Santiago</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="course-details">
+                                    <p class="course1">Course</p>
+                                    <p class="course-d">Advanced Mathematics</p>
+                                </div>
+                                <p class="right">15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                            <div class="notify-item yellow1">
+                                <div class="contents">
+                                    <p>23 new students created</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <!-- <div class="course-details">
+                                            
+                                        </div> -->
+                                <p class="right">15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                            <div class="notify-item yellow1">
+                                <div class="contents">
+                                    <p>15 submissions ready for evaluation</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <div class="course-details">
+                                    <p class="course1">Class</p>
+                                    <p class="course-d">Basics of Algebra</p>
+                                </div>
+                                <p class="right">15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                            <div class="notify-item yellow1">
+                                <div class="contents">
+                                    <p>License for Basic Concepts in Geometry has been assigned to your... school</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <!-- <div class="course-details">
+                                            
+                                        </div> -->
+                                <p class="right">15-Sep-2018 at 07:21 pm</p>
+                            </div>
+                            <div class="notify-item">
+                                <div class="contents">
+                                    <p>Lesson 3 Practice Worksheet overdue for Sam Diego</p>
+                                    <div class="minus">
+                                        -
+                                    </div>
+                                </div>
+                                <!-- <div class="course-details">
+                                            <p class="course">Course:</p>
+                                            <p class="course-d"> Advanced Mathematics</p>
+                                        </div> -->
+                                <!-- <p class="right">15-Sep-2018 at 07:21 pm</p> -->
+                            </div>
+
+                        </div>
                 </li>
                 <li><span class="profile"> <img src="./quantum screen assets/icons/account_circle.svg"
                             alt=""></span><span tabindex="0" class="badge white">T</span></li>
-                <li class="hamburger" role="none" id="hambur"> <a href="#" onmouseover="toggleMenu()">
+                <li onmouseover="toggleMenu()" class="hamburger" role="none" id="hambur"> <a href="#">
                         <img src="./icons/hamburger-menu.svg" alt="hamburger-menu">
-                        <ul class="mobile-menu" id="box">
-                            <li class="mobile-item">
-                                <div class="content">
-                                    <p>DASHBOARD</p>
-                                    <img src="./icons/arrow-down.svg" alt="">
-                                </div>
-                            </li>
-                            <li class="mobile-item">
-                                <div class="content">
-                                    <p>CONTENT</p>
-                                    <img src="./icons/arrow-down.svg" alt="">
-                                </div>
-                            </li>
-                            <li class="mobile-item">
-                                <div class="content">
-                                    <p>USERS</p>
-                                    <img src="./icons/arrow-down.svg" alt="">
-                                </div>
-                            </li>
-                            <li class="mobile-item">
-                                <div class="content">
-                                    <p>REPORTS</p>
-                                    <img src="./icons/arrow-down.svg" alt="">
-                                </div>
-                            </li>
-                            <li class="mobile-item">
-                                <div class="content">
-                                    <p>ADMIN</p>
-                                    <img src="./icons/arrow-down.svg" alt="">
-                                </div>
-                            </li>
-                        </ul>
-                    </a></li>
+
+                    </a>
+                </li>
+                <ul class="mobile-menu" id="box">
+                    <li class="mobile-item">
+                        <div class="content">
+                            <p>DASHBOARD</p>
+                            <img src="./icons/arrow-down.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="content">
+                            <p>CONTENT</p>
+                            <img src="./icons/arrow-down.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="content">
+                            <p>USERS</p>
+                            <img src="./icons/arrow-down.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="content">
+                            <p>REPORTS</p>
+                            <img src="./icons/arrow-down.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="mobile-item">
+                        <div class="content">
+                            <p>ADMIN</p>
+                            <img src="./icons/arrow-down.svg" alt="">
+                        </div>
+                    </li>
+                </ul>
 
             </ul>
+
         </div>
 
     </header>
@@ -92,7 +257,7 @@
             </div>
         </div>
         <div class="courses">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="card-header">
                     <div class="course-image">
                         <img src="./images/imageMask.png" alt="course 1">
@@ -123,97 +288,8 @@
                     <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
                     <img src="./icons/reports.svg" tabindex="0" alt="reports course">
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="course-image">
-                        <img src="./images/imageMask-1.png" alt="course 2">
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            <h2 tabindex="0">Displacement, Velocity and Speed</h2>
-                            <img src="./icons/favourite.svg" alt="">
-                        </div>
-                        <div class="grade-info"><span class="subject">Physics 2</span><span class="line">|</span><span
-                                class="grade">Grade 6 </span>
-                            <span class="green-text">+3</span></div>
-                        <p class="syllabus"><span class="units bold-text">2</span> Units <span
-                                class="lessons bold-text">15</span> Lessons <span class="topics bold-text">20</span>
-                            Topics</p>
-                        <div class="teacher">
-                            <select id="teacher1" aria-label="teacher" name="teacher">
-                                <option value="">No Classes</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <div class="options">
-                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
-                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
-                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
-                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="course-image">
-                        <img src="./images/imageMask-3.png" alt="course 3">
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            <h2 tabindex="0">Intoduction to Biology: Micro organisms and how they affec...</h2>
-                            <img src="./icons/favourite.svg" alt="">
-                        </div>
-                        <div class="grade-info"><span class="subject">Biology</span><span class="line">|</span><span
-                                class="grade">Grade 4 </span>
-                            <span class="green-text">+1</span></div>
-                        <p class="syllabus"><span class="units bold-text">5</span> Units <span
-                                class="lessons bold-text">16</span> Lessons <span class="topics bold-text">22</span>
-                            Topics</p>
-                        <div class="teacher">
-                            <select id="teacher2" aria-label="teacher" name="teacher">
-                                <option value="">All Classes</option>
-                            </select>
-                        </div>
-                        <p class="students">300 Students</p>
-                    </div>
-                </div>
-                <div class="options">
-                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
-                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
-                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
-                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-header">
-                    <div class="course-image">
-                        <img src="./images/imageMask-2.png" alt="course 4">
-                    </div>
-                    <div class="course-info">
-                        <div class="title">
-                            <span class="expired">EXPIRED</span>
-                            <h2 tabindex="0">Intoduction to High School Mathematics</h2>
-                            <img class="disabled-star" src="./icons/favourite.svg" alt="">
-                        </div>
-                        <div class="grade-info"><span class="subject">Mathematics</span><span class="line">|</span><span
-                                class="grade">Grade 8 </span>
-                            <span class="green-text">+3</span></div>
-                        <div class="teacher">
-                            <select id="teacher3" aria-label="teacher" name="teacher">
-                                <option value="frank">Mr. Frank's Class A</option>
-                            </select>
-                        </div>
-                        <p class="students">44 Students<span class="line">|</span>14-Oct-2019 - 20-Oct-2020</p>
-                    </div>
-                </div>
-                <div class="options">
-                    <img tabindex="0" src="./icons/preview.svg" alt="preview course">
-                    <img src="./icons/manage course.svg" tabindex="0" alt="manage course">
-                    <img src="./icons/grade submissions.svg" tabindex="0" alt="grade submission course">
-                    <img src="./icons/reports.svg" tabindex="0" alt="reports course">
-                </div>
-            </div>
+            </div> -->
+
         </div>
     </div>
     </div>

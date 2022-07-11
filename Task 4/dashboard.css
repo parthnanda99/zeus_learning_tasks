@@ -432,4 +432,140 @@ footer {
   font-weight: 600;
 }
 
-/* hamburger*//*# sourceMappingURL=dashboard.css.map */
+/* hamburger*/
+/* notification start*/
+.notification-box {
+  display: inline-block;
+  height: 0;
+  position: absolute;
+  width: 315px;
+  height: 0px;
+  opacity: 0;
+  right: 0;
+  top: 43px;
+  background-color: #fff;
+  transition: 1s opacity, 1s height;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  font-size: 14px;
+  color: #222222;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.notify-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid rgba(34, 34, 34, 0.1215686275);
+}
+
+.notify-item:nth-child(6) {
+  position: relative;
+  z-index: 1;
+  height: 114px;
+}
+
+.notify-item:nth-child(6)::after {
+  content: "SHOW ALL";
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.2392156863);
+  border-radius: 0px 0px 2px 2px;
+  opacity: 1;
+  width: 315px;
+  height: 48px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.notify-item.yellow1 {
+  background-color: #FFFFEE;
+  height: 91px;
+}
+
+.notify-item.white1 {
+  background-color: #fff;
+  height: 114px;
+}
+
+.notify-item .contents p {
+  width: 260px;
+}
+
+.notify-item .contents {
+  width: 100%;
+  display: flex;
+  margin-top: 16px;
+}
+
+.notify-item .right {
+  width: 100%;
+  text-align: right;
+  color: #6E6E6E;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.notify-item:nth-child(2) .right {
+  margin-top: 8px;
+}
+
+.notify-item:nth-child(1) .right {
+  margin-top: 8px;
+}
+
+.notify-item:nth-child(3) .right {
+  margin-top: 28px;
+}
+
+.notify-item:nth-child(4) .right {
+  margin-top: 8px;
+}
+
+.notify-item:nth-child(5) .right {
+  margin-top: 18px;
+}
+
+.notify-item .contents {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notify-item .contents .minus {
+  width: 20px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #1F7A54;
+  text-align: center;
+  color: #1F7A54;
+  font-size: 20px;
+}
+
+.notify-item .course-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.notify-item .course-details .course1 {
+  color: #6E6E6E;
+  margin-right: 5px;
+}
+
+.notify-item .course-details .course-d {
+  color: #222222;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* notification end*//*# sourceMappingURL=dashboard.css.map */

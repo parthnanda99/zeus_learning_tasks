@@ -1,0 +1,173 @@
+{
+  "data": [
+    {
+      "heading": {
+        "cover": "./images/imageMask.png",
+        "title": "Acceleration"
+      },
+      "favourite": {
+        "icon": "./icons/favourite.svg",
+        "isDisable" :  false
+      },
+      "class":{
+        "subject": "Physics",
+        "grade": " Grade 7",
+        "greenText": "+2"
+      },
+      "syllabus":{
+        "units": "4",
+        "unitsText": " Units ",
+        "lessons": "18",
+        "lessonsText": " Lessons ",
+        "topics": "24",
+        "topicsText": " Topics"
+      },
+      "teacher": "Mr. Frank's Class B",
+      "duration":{
+        "students": "50 Students",
+        "isDashVisible": true,
+        "date": "21-Jan-2020 - 21-Aug-2020"
+      },
+      "preview": {
+        "icon": "./icons/preview.svg"
+      },
+      "manage": {
+        "icon":"./icons/manage course.svg"
+      },
+      "submission": {
+        "icon": "./icons/grade submissions.svg"
+      },
+      "report": {
+        "icon": "./icons/reports.svg"
+      }
+    },
+    {
+      "heading": {
+        "cover": "./images/imageMask-1.png",
+        "title": "Displacement, Velocity and Speed"
+      },
+      "favourite": {
+        "icon": "./icons/favourite.svg",
+        "isDisable" :  false
+      },
+      "class":{
+        "subject": "Physics 2",
+        "grade": " Grade 6",
+        "greenText": "+3"
+      },
+      "syllabus":{
+        "units": "2",
+        "unitsText": " Units ",
+        "lessons": "15",
+        "lessonsText": " Lessons ",
+        "topics": "20",
+        "topicsText": " Topics"
+      },
+      "teacher": "No Classes",
+      "duration":{
+        "students": "",
+        "isDashVisible": false,
+        "date": ""
+      },
+      "preview": {
+        "icon": "./icons/preview.svg"
+      },
+      "manage": {
+        "icon": "./icons/manage course.svg",
+        "isDisable": true
+      },
+      "submission": {
+        "icon": "./icons/grade submissions.svg",
+        "isDisable": true
+      },
+      "report": {
+        "icon": "./icons/reports.svg"
+      }
+    },
+    {
+      "heading": {
+        "cover": "./images/imageMask-3.png",
+        "title": "Intoduction to Biology: Micro organisms and how they affec..."
+      },
+      "favourite": {
+        "icon": "./icons/favourite.svg",
+        "isDisable" :  false
+      },
+      "class":{
+        "subject": "Biology",
+        "grade": " Grade 4",
+        "greenText": "+1"
+      },
+      "syllabus":{
+        "units": "5",
+        "unitsText": " Units ",
+        "lessons": "16",
+        "lessonsText": " Lessons ",
+        "topics": "22",
+        "topicsText": " Topics"
+      },
+      "teacher": "All Classes",
+      "duration":{
+        "students": "300 Students",
+        "isDashVisible": false,
+        "date": ""
+      },
+      "preview": {
+        "icon": "./icons/preview.svg"
+      },
+      "manage": {
+        "icon": "./icons/manage course.svg",
+        "isDisable": true
+      },
+      "submission": {
+        "icon": "./icons/grade submissions.svg",
+        "isDisable": true
+      },
+      "report": {
+        "icon": "./icons/reports.svg"
+      }
+    },    
+    {
+      "heading": {
+        "cover": "./images/imageMask-2.png",
+        "isExpired": true,
+        "title": "Intoduction to High School Mathematics"
+      },
+      "favourite": {
+        "icon": "./icons/favourite.svg",
+        "isDisable": true
+      },
+      "class":{
+        "subject": "Mathematics",
+        "grade": " Grade 8",
+        "greenText": "+3"
+      },
+      "syllabus":{
+        "units": "",
+        "unitsText": "",
+        "lessons": "",
+        "lessonsText": "",
+        "topics": "",
+        "topicsText": ""
+      },
+      "teacher": "Mr. Frank's Class A",
+      "duration":{
+        "students": "44 Students",
+        "isDashVisible": true,
+        "date": "14-Oct-2019 - 20-Oct-2020"
+      },
+      "preview": {
+        "icon": "./icons/preview.svg"
+      },
+      "manage": {
+        "icon": "./icons/manage course.svg"
+      },
+      "submission": {
+        "icon": "./icons/grade submissions.svg"
+      },
+      "report": {
+        "icon": "./icons/reports.svg"
+      }
+    }
+  ]
+}
