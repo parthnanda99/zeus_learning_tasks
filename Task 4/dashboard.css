@@ -103,7 +103,6 @@ ul li {
 #admin {
     display: none;
   }
-
   .menu-bar .hamburger {
     display: block;
   }
@@ -151,6 +150,9 @@ ul li {
   background-color: #25313f;
   display: block;
   border: 2px solid #3fd28b;
+}
+.profile img {
+  height: 100%;
 }
 
 .container {
@@ -387,4 +389,47 @@ footer {
   font-size: 12px;
   font-weight: 700;
   margin: 0 8px;
-}/*# sourceMappingURL=dashboard.css.map */
+}
+
+/* hamburger-menu start */
+/* */
+.mobile-menu {
+  height: 0;
+  width: 280px;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  top: 43px;
+  right: 0px;
+  background-color: #fff;
+  padding-left: 16px;
+  padding-right: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: 1s opacity, 250ms height;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mobile-menu .mobile-item {
+  width: 100%;
+  margin: 15px 0px 15px 0px;
+}
+
+.mobile-item .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hamburger ul {
+  display: flex;
+  justify-content: start;
+  gap: 0px;
+}
+.hamburger ul p {
+  color: #1F7A54;
+  font-weight: 600;
+}
+
+/* hamburger*//*# sourceMappingURL=dashboard.css.map */
