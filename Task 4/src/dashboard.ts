@@ -1,55 +1,55 @@
-// import {product} from './interfaces/interface'
-let box = document.getElementById("box") as HTMLElement;
-let ham = document.getElementById("hambur") as HTMLElement; 
-let down = false;
-function toggleMenu(e : any) {
-    if (!down) {
-        box.style.height = "288px";
-        box.style.opacity = "1";
-        down = true;
-    }
-    ham.addEventListener("mouseleave", function (e) {
-        box.style.height = "0px";
-        box.style.opacity = "0";
-        down = false;
-    });
-}
-// notification bar
-let notify = document.getElementById("notify") as HTMLElement;
-let menuitem = document.getElementById("menuitem") as HTMLElement; 
-let down1 = false;
-function toggleNotify(e : any) {
-    if (!down1) {
-        notify.style.height = "594px";
-        notify.style.opacity = "1";
-        down1 = true;
-        // box.style.display = inline - block;
-    }
-    menuitem.addEventListener("mouseleave", function (e) {
-        notify.style.height = "0px";
-        notify.style.opacity = "0";
-        // box.style.display = none;
-        down1 = false;
-    });
-};
+// // import {product} from './interfaces/interface'
+// let box = document.getElementById("box") as HTMLElement;
+// let ham = document.getElementById("hambur") as HTMLElement; 
+// let down = false;
+// function toggleMenu(e : any) {
+//     if (!down) {
+//         box.style.height = "288px";
+//         box.style.opacity = "1";
+//         down = true;
+//     }
+//     ham.addEventListener("mouseleave", function (e) {
+//         box.style.height = "0px";
+//         box.style.opacity = "0";
+//         down = false;
+//     });
+// }
+// // notification bar
+// let notify = document.getElementById("notify") as HTMLElement;
+// let menuitem = document.getElementById("menuitem") as HTMLElement; 
+// let down1 = false;
+// function toggleNotify(e : any) {
+//     if (!down1) {
+//         notify.style.height = "594px";
+//         notify.style.opacity = "1";
+//         down1 = true;
+//         // box.style.display = inline - block;
+//     }
+//     menuitem.addEventListener("mouseleave", function (e) {
+//         notify.style.height = "0px";
+//         notify.style.opacity = "0";
+//         // box.style.display = none;
+//         down1 = false;
+//     });
+// };
 
-let Alert = document.getElementById("alerts") as HTMLElement;
-let alertItem = document.getElementById("alert-item") as HTMLElement;
-let down2 = false;
-function toggleAlert(e : any) {
-    if (!down2) {
-        Alert.style.height = "582px";
-        Alert.style.opacity = "1";
-        down2 = true;
-        // box.style.display = inline - block;
-    }
-    alertItem.addEventListener("mouseleave", function (e) {
-        Alert.style.height = "0px";
-        Alert.style.opacity = "0";
-        // box.style.display = none;
-        down2= false;
-    });
-};
+// let Alert = document.getElementById("alerts") as HTMLElement;
+// let alertItem = document.getElementById("alert-item") as HTMLElement;
+// let down2 = false;
+// function toggleAlert(e : any) {
+//     if (!down2) {
+//         Alert.style.height = "582px";
+//         Alert.style.opacity = "1";
+//         down2 = true;
+//         // box.style.display = inline - block;
+//     }
+//     alertItem.addEventListener("mouseleave", function (e) {
+//         Alert.style.height = "0px";
+//         Alert.style.opacity = "0";
+//         // box.style.display = none;
+//         down2= false;
+//     });
+// };
 
 
 // interface
@@ -111,7 +111,7 @@ async function fetchData() {
     const course = await response.json();
     
     const { data }  = course;
-    console.log(data);
+    // console.log(data);
     return data;
    
 }
