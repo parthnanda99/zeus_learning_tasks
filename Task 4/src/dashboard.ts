@@ -51,7 +51,42 @@
 //     });
 // };
 
+const menuContentSubHeading = document.getElementById("nav-content-heading") as HTMLElement;
+const menuUsersSubHeading = document.getElementById("nav-users-heading") as HTMLElement;
+const menuReportsSubHeading = document.getElementById("nav-reports-heading") as HTMLElement;
+const menuAdminSubHeading = document.getElementById("nav-admin-heading") as HTMLElement;
 
+const navClickHandler = (block: string, sub: string, arrow: string) => {
+    const menuBlock = document.getElementById(block) as HTMLElement;
+    const menuNavSub = document.getElementById(sub) as HTMLElement;
+    const menuArrow = document.getElementById(arrow) as HTMLElement;
+    const display = menuNavSub.style.display;
+    if (display == 'none' || display == '') {
+        menuNavSub.style.display = "block"
+        menuBlock.style.backgroundColor = "#F3F3F3"
+        menuArrow.style.transform = "rotate(180deg)"
+    } else {
+        menuNavSub.style.display = "none"
+        menuBlock.style.backgroundColor = "#FFFFFF"
+        menuArrow.style.transform = ""
+    }
+}
+
+menuContentSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-content", "nav-content-sub", "nav-arrow-1");
+})
+
+menuUsersSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-users", "nav-users-sub", "nav-arrow-2");
+})
+
+menuReportsSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-reports", "nav-reports-sub", "nav-arrow-3");
+})
+
+menuAdminSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-admin", "nav-admin-sub", "nav-arrow-4");
+})
 // interface
  interface Product {
     

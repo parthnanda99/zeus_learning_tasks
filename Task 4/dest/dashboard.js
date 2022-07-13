@@ -42,6 +42,55 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
+// let Alert = document.getElementById("alerts") as HTMLElement;
+// let alertItem = document.getElementById("alert-item") as HTMLElement;
+// let down2 = false;
+// function toggleAlert(e : any) {
+//     if (!down2) {
+//         Alert.style.height = "582px";
+//         Alert.style.opacity = "1";
+//         down2 = true;
+//         // box.style.display = inline - block;
+//     }
+//     alertItem.addEventListener("mouseleave", function (e) {
+//         Alert.style.height = "0px";
+//         Alert.style.opacity = "0";
+//         // box.style.display = none;
+//         down2= false;
+//     });
+// };
+const menuContentSubHeading = document.getElementById("nav-content-heading");
+const menuUsersSubHeading = document.getElementById("nav-users-heading");
+const menuReportsSubHeading = document.getElementById("nav-reports-heading");
+const menuAdminSubHeading = document.getElementById("nav-admin-heading");
+const navClickHandler = (block, sub, arrow) => {
+    const menuBlock = document.getElementById(block);
+    const menuNavSub = document.getElementById(sub);
+    const menuArrow = document.getElementById(arrow);
+    const display = menuNavSub.style.display;
+    if (display == 'none' || display == '') {
+        menuNavSub.style.display = "block";
+        menuBlock.style.backgroundColor = "#F3F3F3";
+        menuArrow.style.transform = "rotate(180deg)";
+    }
+    else {
+        menuNavSub.style.display = "none";
+        menuBlock.style.backgroundColor = "#FFFFFF";
+        menuArrow.style.transform = "";
+    }
+};
+menuContentSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-content", "nav-content-sub", "nav-arrow-1");
+});
+menuUsersSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-users", "nav-users-sub", "nav-arrow-2");
+});
+menuReportsSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-reports", "nav-reports-sub", "nav-arrow-3");
+});
+menuAdminSubHeading.addEventListener('click', () => {
+    navClickHandler("nav-admin", "nav-admin-sub", "nav-arrow-4");
+});
 function fetchData() {
     return __awaiter(this, void 0, void 0, function* () {
         const response = yield fetch('../data/data.json');
